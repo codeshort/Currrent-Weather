@@ -13,7 +13,8 @@ request({url, json:true},(error,{body }) =>{
   }
   else
   {
-     callback(undefined, body.current.weather_descriptions[0]+ ".is currently " + body.current.temperature+ " celsius and it feels like "+ body.current.feelslike+ " celsius ")
+
+     callback(undefined, body.current.weather_descriptions[0]+ ".is currently " + body.current.temperature+ " celsius and it feels like "+ body.current.feelslike+ " celsius " +" . The Current humidity details is : "+ body.current.humidity +" %")
   }
 }
 )}
